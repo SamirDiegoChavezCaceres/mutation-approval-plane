@@ -72,6 +72,14 @@ pytest
 Covers idempotent propose, self-approval and non-reviewer rejection, the
 before-image conflict, idempotent execution, and the journal.
 
+## Limitations and next steps
+
+- State is held in memory; a real deployment runs the same logic over a database
+  (the store interface is ready for that).
+- The before-image check compares a digest, so it detects that a resource
+  changed, not what changed.
+- Next: add proposal expiry and a SQL-backed store.
+
 ## License
 
 MIT.
