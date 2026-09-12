@@ -10,6 +10,12 @@ journal, and a guard against concurrent edits.
 This is the pattern you want the moment something other than a trusted human can
 request a change: an LLM agent, an automation, an external caller.
 
+## Demo
+
+![demo](assets/demo.gif)
+
+Generate it with [VHS](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
+
 ## Guarantees
 
 - **Idempotent proposals.** Proposing the identical change twice returns the
