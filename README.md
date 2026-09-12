@@ -6,8 +6,7 @@ Instead of mutating a resource directly, you **propose** the change, a reviewer
 journal, and a guard against concurrent edits.
 
 This is the pattern you want the moment something other than a trusted human can
-request a change (an LLM agent, an automation, an external caller). A from-
-scratch, neutral rewrite of a production design.
+request a change: an LLM agent, an automation, an external caller.
 
 ## Guarantees
 
