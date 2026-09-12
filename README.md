@@ -1,5 +1,7 @@
 # mutation-approval-plane
 
+[![CI](https://github.com/SamirDiegoChavezCaceres/mutation-approval-plane/actions/workflows/ci.yml/badge.svg)](https://github.com/SamirDiegoChavezCaceres/mutation-approval-plane/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 A small, domain-agnostic plane for changes that must not be applied blindly.
 Instead of mutating a resource directly, you **propose** the change, a reviewer
 **approves** it, and only then is it **executed** - with idempotency, an audit
