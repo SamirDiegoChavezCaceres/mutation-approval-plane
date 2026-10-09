@@ -14,6 +14,14 @@ request a change: an LLM agent, an automation, an external caller.
 
 ![demo](assets/demo.gif)
 
+The demo (`scripts/demo.py`) runs in memory with no dependencies and walks one
+change (raise a campaign budget from 500 to 1000) through the plane: propose,
+re-propose the same change and get the same id back (idempotent), self-approval
+blocked (separation of duties), approval by a different reviewer, an execute
+refused because the live value drifted (before-image concurrency check), a
+successful execute once the value matches, and the full audit journal of state
+transitions.
+
 Generate it with [VHS](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
 
 ## Guarantees
